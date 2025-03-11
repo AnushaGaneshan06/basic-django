@@ -1,0 +1,31 @@
+{% extends "Core/layouts/main.html" %}
+{% block title %}SIGN IN PAGE {% endblock title%}
+{% block content %}
+<!-- ----------------form ------------------  -->
+<div class="conatiner " style="margin-top: 10%;">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card shadow-lg">
+                <div class="card-header text-center">
+                    <h1 class="mt-3">Sign In</h1>
+                    <form method="POST">
+                        {% csrf_token %}
+                        <div class="mt-4">
+                            {{ form.username.label_tags }}
+                            {{ form.username }}
+                        </div>
+                        <div class="mt-4">
+                            {{ form.pass1.label_tags }}
+                            {{ form.pass1 }}
+                        </div>
+                        <button type="submit"
+                            class="btn btn-primary w-100 mb-4 mt-4">Sign
+                            In</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------------------------------------------- -->
+{% endblock content %}

@@ -1,0 +1,40 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.center li a {
+    margin-right: 20px;
+    color: black;
+
+}
+
+.navbar-nav li a:hover {
+    color: rgb(43, 63, 4);
+}
+
+.icon {
+    padding: 2px;
+    margin-left: 10px;
+    color: black;
+
+}
+
+.banner {
+    object-fit: cover;
+    width: 100%;
+}
+
+/* .box {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #FFF3E3;
+    position: absolute;
+    left: 55%;
+    top: 40%;
+} */

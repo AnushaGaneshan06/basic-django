@@ -1,12 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>HOME</title>
-    </head>
-    <body>
-        <h2>Hello world</h2>
+{% extends "Core/layouts/main.html" %}
+{% load static %}
 
-    </body>
-</html>
+{% block title %}Home page {% endblock title %}
+
+{% block content %}
+{% include "Core/inc/navbar.html" %}
+<!-- img  -->
+<img src="{% static 'images/banner.png' %}" class="banner"
+    alt="banner">
+<!-- <div class="box">
+    <div class="row">
+        <div class="col-md-9">
+            <p>New Arrival</p>
+            <h3 class="text-warning fw-bold">Discover Our New Collection</h3>
+            <span>Lorem ipsum dolor sit amet, consectetur
+                adipiscing
+                elit.
+                Ut elit tellus,
+                luctus nec ullamcorper mattis.</span><br>
+            <button class="btn btn-success mt-2"><a href="#"
+                    class="text-light">Buy
+                    Now</a></button>
+        </div>
+    </div>
+
+</div> -->
+
+{% endblock content %}
